@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('cdn') %>
+</head>
+<body>
+  <section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">EdukaYuk</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/users/edit/profile/<%= id %>">My Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/users/logout">Logout</a>
+            </li>
+              </ul>
+      </div>
+    </nav>
+    </section>
+      <div class="container">
+        <div class="row">
+          <div class="col-4 my-4">
+          <img src="https://caraguna.com/wp-content/uploads/2022/02/typescript.png" style="height: 200px;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">TypeScript</h5>
+            <p class="card-text">Boost your JavaScript projects with TypeScript: Learn all about core types, generics, TypeScript + React or Node & more!</p>
+            </div>
+            </div>
+            <div class="col-4 my-4">
+              <img src="https://www.rlogical.com/wp-content/uploads/2020/12/Best-9-Examples-of-Websites-Built-with-ReactJs.png" style="height: 200px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">ReactJS</h5>
+                <p class="card-text">Dive in and learn React.js from scratch! Learn React, Hooks, Redux, React Router, Next.js, Best Practices and way more!</p>
+                </div>
+                </div>
+                <div class="col-4 my-4">
+                  <img src="https://trisectinstitute.com/wp-content/uploads/2021/12/best-python-training.png" style="height: 200px;" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Python</h5>
+                    <p class="card-text">Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games</p>
+                    </div>
+                    </div>
+            </div>
+            </div>
+</body>
+</html>

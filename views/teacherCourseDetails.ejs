@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('cdn') %>
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .card-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .card {
+            width: 18rem;
+        }
+    </style>
+</head>
+<body>
+
+    <%- include('navbarTeacher') %>
+
+    <div class="card-container">
+        <div class="card" style="width: 18rem;">
+            <% data.forEach(el => { %>
+             
+                <img src="<%= el.imageUrl %>" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><%= el.course %></h5>
+                    <p class="card-text"><% el.Schedules.forEach(item => { %>
+                     <%= item.scedule %>
+                    <% }) %></p>
+                    <% }) %>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

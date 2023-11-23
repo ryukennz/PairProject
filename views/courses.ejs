@@ -1,0 +1,16 @@
+    <section id="courses" class="courses">
+    <div class="container">
+        <div class="row">
+                    <% dataCourse.forEach(el => { %>
+                    <div class="col-4 my-4">
+                        <img src="<%= el.imageUrl %>" style="height: 200px;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                    <h5 class="card-title"><%= el.course %></h5>
+                    <p class="card-text"><%= el.description %></p>
+                    <a href="#" class="btn btn-primary">Add</a>
+                    </div>
+                    </div>
+                    <% }) %>
+                </div>
+                </div>
+    </section>

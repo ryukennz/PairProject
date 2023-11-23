@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('cdn') %>
+</head>
+<body>
+    <section class="vh-100" style="background-color: #3c2b2f;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-5">
+              <div class="card" style="border-radius: 1rem;">
+                <div class="row g-0">
+        
+                  <div class="d-flex align-items-center">
+                    <div class="card-body p-2 p-lg-5 text-black">
+      
+                      <form action="/users/edit/profile/<%= user.id  %>" method="post">
+      
+                        <div class="d-flex align-items-center mb-3 pb-1">
+                          <span class="h1 fw-bold mb-0">Edit Profile</span>
+                        </div>
+                        <input type="hidden" id="schedule" class="form-control form-control-lg" name="id" value="<%= user.id %>"/>
+                        
+                         <div class="form-outline">
+                           <label class="form-label" for="firstName">FirstName</label>
+                           <input type="text" id="schedule" class="form-control form-control-lg" name="firstName" value="<%= user.firstName %>"/>
+                         </div>
+
+                         <div class="form-outline">
+                            <label class="form-label" for="lastName">lastName</label>
+                            <input type="text" id="schedule" class="form-control form-control-lg" name="lastName" value="<%= user.lastName %>"/>
+                          </div>
+
+                        <div class="form-outline">
+                        <label class="form-label" for="gender">Gender</label>
+                        <select class="form-select" name="gender">
+                            <option selected disabled>-- Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                          </select>
+                          </div>
+
+                          <div class="form-outline">
+                            <label class="form-label" for="bornYear">Born Year</label>
+                            <input type="text" id="schedule" class="form-control form-control-lg" name="bornYear"/>
+                          </div>
+
+                          <div class="form-outline">
+                            <label class="form-label" for="address">Address</label>
+                            <input type="text" id="schedule" class="form-control form-control-lg" name="address" />
+                          </div>
+
+                          <div class="form-outline">
+                            <label class="form-label" for="address">Profile Picture</label>
+                            <input type="text" id="schedule" class="form-control form-control-lg" name="profilePicture" />
+                          </div>
+
+                          <div class="form-outline">
+                            <label class="form-label" for="scedule">Email</label>
+                            <input type="text" id="schedule" class="form-control form-control-lg" name="email" value="<%= user.email %>"/>
+                            <input type="hidden" id="schedule" class="form-control form-control-lg" name="password" value="<%= user.password %>"/>
+
+                          </div><br>
+                       
+                        <div class="pt-1 mb-4">
+                          <button class="btn btn-dark btn-lg btn-block" type="submit">Submit</button>
+                        </div>
+                      </form>
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>

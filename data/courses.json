@@ -1,0 +1,38 @@
+[
+    {
+        "course": "ReactJS",
+        "imageUrl": "https://www.rlogical.com/wp-content/uploads/2020/12/Best-9-Examples-of-Websites-Built-with-ReactJs.png",
+        "category": "Web Dev",
+        "description": "Dive in and learn React.js from scratch! Learn React, Hooks, Redux, React Router, Next.js, Best Practices and way more!"
+    },
+    {
+        "course": "TypeScript",
+        "imageUrl": "https://caraguna.com/wp-content/uploads/2022/02/typescript.png",
+        "category": "Web Dev",
+        "description": "Boost your JavaScript projects with TypeScript: Learn all about core types, generics, TypeScript + React or Node & more!"
+    },
+    {
+        "course": "iOS Development",
+        "imageUrl": "https://media.geeksforgeeks.org/wp-content/uploads/20230617194030/Getting-Started-with-iOS-Development.webp",
+        "category": "Mobile Development",
+        "description": "From Beginner to iOS App Developer with Just One Course! Fully Updated with a Comprehensive Module Dedicated to SwiftUI!"
+    },
+    {
+        "course": "Android Development",
+        "imageUrl": "https://global-uploads.webflow.com/6100d0111a4ed76bc1b9fd54/633a3977634507f8866a1542_android%20developer%20tools.png",
+        "category": "Mobile Development",
+        "description": "Learn Android O App Development using Java & Kotlin - build real apps including Super Mario Run, Whatsapp and Instagram!"
+    },
+    {
+        "course": "Python",
+        "imageUrl": "https://trisectinstitute.com/wp-content/uploads/2021/12/best-python-training.png",
+        "category": "Data Science",
+        "description": "Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games"
+    },
+    {
+        "course": "Data Analysis",
+        "imageUrl": "https://www.cetpainfotech.com/wp-content/uploads/2022/05/Data-Analytics-with-python-course-in-noida.jpg",
+        "category": "Data Science",
+        "description": "Analyze data quickly and easily with Python's powerful pandas library! All datasets included --- beginners welcome!"
+    }
+]

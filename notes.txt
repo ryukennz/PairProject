@@ -1,0 +1,5 @@
+npx sequelize-cli model:generate --name Course --attributes course:string,courseTime:string,category:string
+npx sequelize-cli model:generate --name Teacher --attributes firstName:string,lastName:string,age:integer,gender:string,bornYear:date,email:string,educationBackground:string,password:string
+
+
+npx sequelize-cli migration:generate --name addColumnCourseId
